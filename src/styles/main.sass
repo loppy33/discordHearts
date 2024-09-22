@@ -1,6 +1,6 @@
 @import './colors.modules'
 
-.button_info
+.button__info
     color: $textColor
     background-color: $bgColor
     font-weight: 600
@@ -9,10 +9,19 @@
     padding: 10px 20px
     border-radius: 6px
 
+.button__more
+    background-color: transparent
+    font-size: 14px
+    font-weight: 500
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
 .section__name
+    text-align: left
     font-size: 18px
     font-weight: 600
-    margin-bottom: 12px
+    margin: 12px 0
 
 .task
     border: 1px solid $borderColor
@@ -21,6 +30,7 @@
     display: flex
     justify-content: space-between
     align-items: center
+    margin: 10px 0
 
     &.dashed
         border: 2px dashed $borderColor

@@ -1,6 +1,8 @@
 @import '../../styles/colors.modules'
 
 .Home
+    overflow: scroll
+    height: 86vh
     .info
         top: 0
         position: fixed
@@ -50,10 +52,10 @@
 
     .main__content
         margin-top: 10vh
-        height: calc( 100vh - 24vh )
-        overflow: scroll
+        
         background-color: $bgColor
         border-radius: 24px 24px 0 0
+        padding-bottom: 20px
         .user__balance
             margin-top: 10vh
             text-align: center
@@ -62,3 +64,6 @@
 
             h2
                 font-weight: 600
+
+    .tasks__container
+        text-align: center
