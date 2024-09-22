@@ -1,0 +1,48 @@
+@import '../../styles/colors.modules'
+
+.Home
+    .info
+        display: flex
+        height: 10vh
+        background: linear-gradient(180deg, $mainColor 0%, $secondColor 100%)
+
+        p
+            display: flex
+            align-items: center
+            justify-content: space-between
+            color: $bgColor
+            width: 100%
+
+            svg
+                font-size: 14px
+                transition: .3s
+                animation: heart 3s ease-in-out infinite
+
+                @keyframes heart
+                    0%
+                        transform: rotate(-30deg) scale(1.1)
+                        color: red
+
+                    50%
+                        transform: rotate(0deg)
+                        color: #fff
+
+                    100%
+                        transform: rotate(-30deg) scale(1.1)
+                        color: red
+
+            span
+                display: flex
+                align-items: center
+                gap: 8px
+                font-size: 14px
+
+            button
+                span
+                    font-weight: 600
+                    background: -webkit-linear-gradient($mainColor, $secondColor)
+                    -webkit-background-clip: text
+                    -webkit-text-fill-color: transparent
+
+    img
+        width: 400px

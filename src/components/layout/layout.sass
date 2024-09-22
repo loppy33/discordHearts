@@ -1,0 +1,29 @@
+@import '../../styles/colors.modules'
+
+.menu
+    position: fixed
+    bottom: 0
+    width: 100%
+    z-index: 100
+    padding: 15px 0
+    background-color: $bgColor
+    height: 14vh
+    ul
+        display: flex
+        justify-content: center
+        gap: 50px
+        li
+            a
+                display: flex
+                flex-direction: column
+                align-items: center
+
+                &.active
+                    svg
+                        padding: 5px
+                        background-color: $activeColor
+                        border-radius: 12px
+
+                svg
+                    transition: .3s
+                    font-size: 30px
