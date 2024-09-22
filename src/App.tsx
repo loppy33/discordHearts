@@ -2,9 +2,19 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/layout/Layout";
 import Home from "./pages/home/Home";
 import Friends from "./pages/friends/Friends";
+import { useEffect } from "react";
 
 
 export default function App() {
+  useEffect(() => {
+    // Проверяем, доступен ли WebApp API
+    if (window.Telegram?.WebApp) {
+      const webApp = window.Telegram.WebApp;
+      // Устанавливаем цвет заголовка в красный
+      webApp.headerColor = "#FF0000"; // Красный цвет
+    }
+  }, []);
+
   return (
     <BrowserRouter>
       <Routes>

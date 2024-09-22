@@ -2,11 +2,15 @@
 
 .Home
     .info
-        display: flex
-        height: 10vh
+        top: 0
+        position: fixed
+        width: 100%
+        z-index: -1
+        height: 14vh
         background: linear-gradient(180deg, $mainColor 0%, $secondColor 100%)
 
         p
+            padding-top: 16px
             display: flex
             align-items: center
             justify-content: space-between
@@ -44,5 +48,17 @@
                     -webkit-background-clip: text
                     -webkit-text-fill-color: transparent
 
-    img
-        width: 400px
+    .main__content
+        margin-top: 10vh
+        height: calc( 100vh - 24vh )
+        overflow: scroll
+        background-color: $bgColor
+        border-radius: 24px 24px 0 0
+        .user__balance
+            margin-top: 10vh
+            text-align: center
+            .logo
+                width: 200px
+
+            h2
+                font-weight: 600
