@@ -1,6 +1,5 @@
 @import './colors.modules'
 
-
 .button_info
     color: $textColor
     background-color: $bgColor
@@ -9,3 +8,44 @@
 
     padding: 10px 20px
     border-radius: 6px
+
+.section__name
+    font-size: 18px
+    font-weight: 600
+    margin-bottom: 12px
+
+.task
+    border: 1px solid $borderColor
+    border-radius: 8px
+    padding: 10px 12px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &.dashed
+        border: 2px dashed $borderColor
+
+    p
+        font-size: 16px
+        margin-bottom: 6px
+
+    span
+        font-size: 14px
+        display: flex
+        align-items: center
+        gap: 10px
+
+        .check
+            background-color: transparent
+            border: 1px solid $borderColor
+            border-radius: 12px
+            padding: 3px 10px
+            font-size: 12px
+
+    .join
+        font-size: 14px
+        background-color: $textColor
+        color: $bgColor
+        padding: 3px 12px
+        border-radius: 14px
+        font-weight: 400

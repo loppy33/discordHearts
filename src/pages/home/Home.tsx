@@ -12,9 +12,14 @@ export default function Home() {
                     <img className='logo' src="/logo.png" alt="" />
                     <h2>10,851 HEARTS</h2>
                 </div>
-                <div className="daily__tasks">
-                    <div className="task">
-
+                <div className="daily__tasks container">
+                    <h2 className='section__name'>Daily Tasks</h2>
+                    <div className="task dashed">
+                        <div className="task__info">
+                            <p>Зайди на дискорд сервер</p>
+                            <span>+50 HEARTS <button className='check'>Check</button></span>
+                        </div>
+                        <a className='join' href='https://'>Join</a>
                     </div>
                 </div>
             </div>
