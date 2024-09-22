@@ -11,7 +11,7 @@ export default function App() {
     if (window.Telegram?.WebApp) {
       const webApp = window.Telegram.WebApp;
       // Устанавливаем цвет заголовка в красный
-      webApp.headerColor = "#FF0000"; // Красный цвет
+      webApp.headerColor = "#606572"; // Красный цвет
     }
   }, []);
 
